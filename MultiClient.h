@@ -3,7 +3,7 @@
 // using example from Beej's Guide to Network Programming
 // https://beej.us/guide/bgnet/html/#a-simple-stream-server
 //
-// M. Williamsen, Quantum Design, 10 March 2022
+// M. Williamsen, 24 July 2023
 // -----------------------------------------------------
 
 // client base class, subclass to add special behavior
