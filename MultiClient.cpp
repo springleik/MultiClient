@@ -3,7 +3,7 @@
 // using example from Beej's Guide to Network Programming
 // https://beej.us/guide/bgnet/html/#a-simple-stream-server
 //
-// M. Williamsen, Quantum Design, 1 March 2022
+// M. Williamsen, 24 July 2023
 // ------------------------------------------------------
 
 #include <unistd.h>
@@ -48,7 +48,7 @@ ssize_t doSend(int sockfd, const void *buf, size_t len, int flags)
 
 // connection handler runs in a thread
 // TODO handle multi-packet messages and replies
-// found empirically  that terminal programs send '\n' on enter,
+// found empirically that terminal programs send '\n' on enter,
 // and expect '\r' when receiving lines of text.
 // TODO should skip over escape characters used with telnet
 void client::startClient()
